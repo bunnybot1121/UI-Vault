@@ -1,0 +1,334 @@
+/* =================== STYLE PREVIEWS =================== */
+
+/* 1. Glassmorphism */
+.p-glass { background: linear-gradient(135deg, #667eea, #764ba2); display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 200px; }
+.glass-card { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); backdrop-filter: blur(12px); border-radius: 16px; padding: 20px; width: 160px; }
+.glass-avatar { width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.8); margin-bottom: 12px; }
+.glass-line { height: 8px; border-radius: 4px; background: rgba(255,255,255,0.5); margin-bottom: 6px; }
+.glass-line.short { width: 60%; background: rgba(255,255,255,0.3); }
+.glass-btn { background: rgba(255,255,255,0.25); border: 1px solid rgba(255,255,255,0.4); border-radius: 8px; padding: 6px 12px; color: #fff; font-size: 11px; font-weight: 600; display: inline-block; margin-top: 10px; }
+
+/* 2. Neo-Brutalism */
+.p-nb { background: #f5f0e8; display: flex; align-items: center; justify-content: center; gap: 12px; width: 100%; height: 100%; min-height: 200px; }
+.nb-big { background: #ff6b35; border: 3px solid #000; border-radius: 6px; padding: 10px 18px; font-size: 13px; font-weight: 900; box-shadow: 4px 4px 0 #000; color: #000; font-family: 'Syne', sans-serif; }
+.nb-box { border: 3px solid #000; border-radius: 6px; width: 60px; height: 60px; box-shadow: 4px 4px 0 #000; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 900; background: #ffd60a; }
+
+/* 3. Neumorphism */
+.p-neu { background: #e0e5ec; display: flex; align-items: center; justify-content: center; gap: 16px; width: 100%; height: 100%; min-height: 200px; }
+.neu-card { width: 90px; height: 90px; border-radius: 20px; background: #e0e5ec; box-shadow: 8px 8px 16px #b8bec7, -8px -8px 16px #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; }
+.neu-icon-c { width: 36px; height: 36px; border-radius: 10px; background: #e0e5ec; box-shadow: 4px 4px 8px #b8bec7, -4px -4px 8px #fff; }
+.neu-txt { font-size: 10px; color: #8892a4; font-weight: 600; }
+.neu-slider { width: 80px; height: 6px; border-radius: 3px; background: #e0e5ec; box-shadow: inset 3px 3px 6px #b8bec7, inset -3px -3px 6px #fff; position: relative; }
+.neu-thumb { width: 18px; height: 18px; border-radius: 50%; background: #e0e5ec; box-shadow: 3px 3px 6px #b8bec7, -3px -3px 6px #fff; position: absolute; top: -6px; left: 40%; }
+
+/* 4. Skeuomorphism */
+.p-skeu { background: linear-gradient(180deg, #8b7355 0%, #6b5335 100%); display: flex; align-items: center; justify-content: center; gap: 12px; width: 100%; height: 100%; min-height: 200px; }
+.skeu-note { background: linear-gradient(180deg, #fef9c3 0%, #fef3a0 100%); width: 90px; height: 100px; border-radius: 2px; box-shadow: 2px 2px 8px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.8); display: flex; flex-direction: column; padding: 10px; gap: 4px; }
+.skeu-note-line { height: 1px; background: rgba(0,100,200,.15); width: 100%; }
+.skeu-note-title { font-size: 9px; font-weight: 700; color: #333; margin-bottom: 2px; }
+.skeu-btn-r { background: linear-gradient(180deg, #ff6b6b 0%, #cc0000 50%, #990000 100%); border: 1px solid #800; border-radius: 6px; padding: 7px 12px; font-size: 11px; font-weight: 700; color: #fff; box-shadow: 0 2px 4px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,100,100,.5); text-shadow: 0 1px 1px rgba(0,0,0,.5); }
+
+/* 5. Flat Design */
+.p-flat { background: #2c3e50; display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; height: 100%; min-height: 200px; }
+.flat-card-p { background: #3498db; border-radius: 4px; padding: 14px; width: 80px; height: 80px; display: flex; flex-direction: column; justify-content: flex-end; }
+.flat-icon-p { width: 32px; height: 32px; background: rgba(255,255,255,.3); border-radius: 50%; margin-bottom: auto; }
+.flat-num { font-size: 20px; font-weight: 700; color: #fff; }
+.flat-lbl { font-size: 9px; color: rgba(255,255,255,.7); }
+.flat-card-g { background: #2ecc71; border-radius: 4px; padding: 14px; width: 80px; height: 80px; display: flex; flex-direction: column; justify-content: flex-end; }
+.flat-card-r { background: #e74c3c; border-radius: 4px; padding: 14px; width: 80px; height: 80px; display: flex; flex-direction: column; justify-content: flex-end; }
+
+/* 6. Material Design */
+.p-mat { background: #fafafa; display: flex; align-items: center; justify-content: center; gap: 14px; flex-direction: column; width: 100%; height: 100%; min-height: 200px; }
+.mat-card-p { background: #fff; border-radius: 4px; padding: 14px 16px; box-shadow: 0 2px 4px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.08); width: 180px; }
+.mat-media { width: 100%; height: 50px; background: #6200ea; border-radius: 2px; margin: -14px -16px 12px; width: calc(100% + 32px); }
+.mat-card-title { font-size: 13px; font-weight: 700; color: #212121; margin-bottom: 4px; }
+.mat-card-sub { font-size: 11px; color: #757575; }
+.mat-chip-row { display: flex; gap: 6px; margin-top: 10px; }
+.mat-chip-p { background: #ede7f6; color: #6200ea; font-size: 10px; border-radius: 12px; padding: 3px 10px; font-weight: 600; }
+
+/* 7. Minimalism */
+.p-min { background: #fff; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 200px; }
+.min-comp { width: 180px; }
+.min-eyebrow { font-size: 9px; letter-spacing: 3px; color: #999; text-transform: uppercase; margin-bottom: 8px; }
+.min-big-text { font-family: 'Syne', sans-serif; font-size: 28px; font-weight: 800; color: #111; line-height: 1; letter-spacing: -1.5px; margin-bottom: 12px; }
+.min-divider { height: 2px; background: #111; width: 32px; margin-bottom: 10px; }
+.min-body-text { font-size: 11px; color: #888; line-height: 1.7; }
+
+/* 8. Claymorphism */
+.p-clay { background: linear-gradient(135deg, #fce4ec, #e8f5e9); display: flex; align-items: center; justify-content: center; gap: 12px; width: 100%; height: 100%; min-height: 200px; }
+.clay-c { width: 60px; height: 60px; border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 26px; }
+.clay-c.p { background: #ff6b9d; box-shadow: 0 8px 0 #c94d78, 0 10px 20px rgba(0,0,0,.15); }
+.clay-c.b { background: #67d5f0; box-shadow: 0 8px 0 #40a8c4, 0 10px 20px rgba(0,0,0,.12); }
+.clay-c.y { background: #ffd166; box-shadow: 0 8px 0 #c9a330, 0 10px 20px rgba(0,0,0,.12); }
+.clay-btn-p { background: #a855f7; border-radius: 14px; padding: 8px 16px; font-size: 12px; font-weight: 700; color: #fff; box-shadow: 0 6px 0 #7c22b8, 0 8px 16px rgba(0,0,0,.15); }
+
+/* 9. Retro Y2K */
+.p-retro { background: #000080; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 200px; }
+.win95 { background: #c0c0c0; width: 160px; border-top: 2px solid #fff; border-left: 2px solid #fff; border-right: 2px solid #808080; border-bottom: 2px solid #808080; }
+.win95-bar { background: linear-gradient(90deg, #000080, #1084d0); padding: 4px 6px; display: flex; align-items: center; gap: 4px; }
+.win95-bar span { color: #fff; font-size: 10px; font-weight: 700; flex: 1; }
+.win95-btn { width: 14px; height: 12px; background: #c0c0c0; border-top: 1px solid #fff; border-left: 1px solid #fff; border-right: 1px solid #808080; border-bottom: 1px solid #808080; font-size: 9px; display: flex; align-items: center; justify-content: center; font-weight: 700; }
+.win95-body { padding: 10px; display: flex; flex-direction: column; gap: 6px; }
+.win95-progress-wrap { background: #fff; border-top: 1px solid #808080; border-left: 1px solid #808080; border-right: 1px solid #fff; border-bottom: 1px solid #fff; height: 14px; position: relative; overflow: hidden; }
+.win95-progress { background: #000080; width: 60%; height: 100%; }
+.win95-lbl { font-size: 9px; color: #000; }
+.win95-foot { border-top: 1px solid #808080; padding: 4px 6px; display: flex; gap: 4px; }
+.win95-foot-btn { background: #c0c0c0; border-top: 1px solid #fff; border-left: 1px solid #fff; border-right: 1px solid #808080; border-bottom: 1px solid #808080; font-size: 9px; padding: 2px 8px; font-weight: 700; }
+
+/* 10. Dark Mode Elegance */
+.p-dark { background: #0a0a0a; display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; height: 100%; min-height: 200px; }
+.dark-stat { background: #141414; border: 1px solid #242424; border-radius: 12px; padding: 14px; min-width: 80px; }
+.dark-stat-lbl { font-size: 9px; color: #555; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 6px; }
+.dark-stat-val { font-size: 22px; font-weight: 300; color: #f0f0f0; line-height: 1; }
+.dark-stat-badge { font-size: 9px; padding: 2px 6px; border-radius: 4px; display: inline-block; margin-top: 6px; }
+.dark-stat-badge.up { background: rgba(74,222,128,.12); color: #4ade80; }
+.dark-stat-badge.dn { background: rgba(248,113,113,.12); color: #f87171; }
+.dark-graph { display: flex; align-items: flex-end; gap: 4px; height: 50px; }
+.dark-bar { width: 8px; border-radius: 3px 3px 0 0; }
+
+/* 11. Cyberpunk/Neon */
+.p-cyber { background: #05001a; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 200px; }
+.cyber-card { border: 1px solid #00fff7; padding: 16px; width: 180px; position: relative; }
+.cyber-card::before { content: ''; position: absolute; top: -1px; left: 10px; width: 40px; height: 2px; background: #05001a; }
+.cyber-card::after { content: ''; position: absolute; bottom: -1px; right: 10px; width: 40px; height: 2px; background: #05001a; }
+.cyber-tag { font-size: 9px; color: #00fff7; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px; }
+.cyber-title { font-size: 18px; font-weight: 900; color: #ff2d95; text-shadow: 0 0 20px rgba(255,45,149,.5); margin-bottom: 6px; }
+.cyber-sub { font-size: 10px; color: #7070ff; margin-bottom: 12px; }
+.cyber-btn { background: transparent; border: 1px solid #00fff7; color: #00fff7; font-size: 10px; padding: 5px 12px; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; transition: all .2s; }
+.cyber-bar-wrap { margin-top: 10px; }
+.cyber-bar-bg { height: 4px; background: rgba(0,255,247,.2); border-radius: 2px; position: relative; }
+.cyber-bar-fill { height: 100%; width: 72%; background: linear-gradient(90deg, #00fff7, #ff2d95); border-radius: 2px; }
+
+/* 12. Aurora / Gradient Mesh */
+.p-aurora { background: #0d0d2b; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; width: 100%; height: 100%; min-height: 200px; }
+.aurora-blob { position: absolute; border-radius: 50%; filter: blur(40px); opacity: .7; }
+.aurora-blob.a { width: 120px; height: 120px; background: #7c3aed; top: -20px; left: 20px; }
+.aurora-blob.b { width: 100px; height: 100px; background: #0ea5e9; bottom: -10px; right: 30px; }
+.aurora-blob.c { width: 80px; height: 80px; background: #10b981; top: 20px; right: 60px; }
+.aurora-card { position: relative; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.15); border-radius: 16px; padding: 18px; width: 160px; backdrop-filter: blur(16px); }
+.aurora-title { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+.aurora-sub { font-size: 11px; color: rgba(255,255,255,.5); margin-bottom: 14px; }
+.aurora-progress { height: 6px; background: rgba(255,255,255,.1); border-radius: 3px; overflow: hidden; margin-bottom: 6px; }
+.aurora-fill { height: 100%; border-radius: 3px; background: linear-gradient(90deg, #7c3aed, #0ea5e9, #10b981); }
+.aurora-fill.a { width: 80%; }
+.aurora-fill.b { width: 60%; }
+
+/* 13. Memphis Design */
+.p-memphis { background: #fff; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; width: 100%; height: 100%; min-height: 200px; }
+.memphis-bg { position: absolute; inset: 0; }
+.memphis-shape { position: absolute; }
+.memphis-card { position: relative; background: #fff; border: 3px solid #000; padding: 14px 18px; }
+.memphis-card-title { font-size: 14px; font-weight: 900; font-family: 'Syne', sans-serif; letter-spacing: -0.5px; color: #fff; /* Actually this was black */ }
+.p-memphis .memphis-card-title { color: #000; }
+.memphis-tag-row { display: flex; gap: 5px; margin-top: 8px; }
+.mem-tag { font-size: 9px; font-weight: 700; padding: 2px 8px; border: 2px solid #000; color: #000;}
+
+/* 14. Swiss / International */
+.p-swiss { background: #fff; display: flex; align-items: center; justify-content: center; padding: 16px; width: 100%; height: 100%; min-height: 200px; }
+.swiss-comp { width: 200px; }
+.swiss-red { width: 40px; height: 40px; background: #e63329; margin-bottom: 12px; }
+.swiss-headline { font-family: 'Syne', sans-serif; font-size: 24px; font-weight: 800; line-height: 1; letter-spacing: -1px; color: #1a1a1a; margin-bottom: 8px; }
+.swiss-rule { height: 2px; background: #1a1a1a; width: 100%; margin-bottom: 8px; }
+.swiss-body { font-size: 10px; line-height: 1.8; color: #444; column-count: 2; column-gap: 12px; }
+
+/* 15. Bento Box */
+.p-bento { background: #f5f5f5; display: flex; align-items: center; justify-content: center; padding: 12px; width: 100%; height: 100%; min-height: 200px; }
+.bento-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 60px 60px; gap: 6px; width: 200px; height: 126px; }
+.bento-item { border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+.b1 { background: #1a1a1a; color: #fff; font-size: 11px; font-weight: 700; grid-column: span 2; align-items: flex-end; padding: 8px; font-family: 'Syne', sans-serif; letter-spacing: -0.5px; }
+.b2 { background: #ff6b35; }
+.b3 { background: #4ade80; }
+.b4 { background: #38bdf8; grid-column: span 2; font-size: 11px; color: #0c4a6e; font-weight: 600; font-family: 'DM Mono', monospace; }
+.b5 { background: #f5f0e8; font-size: 10px; color: #888; }
+
+/* 16. Vaporwave */
+.p-vapor { background: linear-gradient(180deg, #1a0533 0%, #0d1b4b 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; width: 100%; height: 100%; min-height: 200px; }
+.vapor-grid { position: absolute; bottom: 0; left: 0; right: 0; height: 60px; background-image: linear-gradient(rgba(255,100,200,.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,100,200,.4) 1px, transparent 1px); background-size: 20px 20px; transform: perspective(200px) rotateX(60deg) translateY(20px); transform-origin: bottom; }
+.vapor-sun { position: absolute; bottom: 20px; width: 70px; height: 35px; border-radius: 40px 40px 0 0; background: linear-gradient(180deg, #ff6ec7, #ff9e3d); }
+.vapor-sun-lines { position: absolute; bottom: 20px; width: 70px; height: 35px; overflow: hidden; }
+.vapor-sun-line { height: 3px; background: #1a0533; margin-top: 6px; }
+.vapor-sun-line:nth-child(1) { margin-top: 12px; }
+.vapor-sun-line:nth-child(2) { margin-top: 8px; }
+.vapor-title { position: relative; font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 800; background: linear-gradient(180deg, #ff6ec7, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: 3px; margin-bottom: 40px; }
+
+/* 17. Organic / Biomorphic */
+.p-organic { background: #f0f5ef; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 200px; }
+.organic-card { background: #fff; border-radius: 40% 60% 70% 30% / 30% 30% 70% 70%; padding: 24px; width: 130px; height: 130px; display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 8px 32px rgba(0,0,0,.08); gap: 6px; text-align: center; }
+.organic-icon { font-size: 30px; }
+.organic-lbl { font-size: 10px; color: #5a7a50; font-weight: 600; letter-spacing: 0.5px; }
+
+/* 18. Monochrome */
+.p-mono { background: #f8f8f8; display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; height: 100%; min-height: 200px; }
+.mono-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 10px; padding: 14px; width: 100px; }
+.mono-circle-row { display: flex; gap: 6px; margin-bottom: 10px; align-items: center; }
+.mono-circle { border-radius: 50%; }
+.mc1 { width: 28px; height: 28px; background: #111; }
+.mc2 { width: 20px; height: 20px; background: #555; }
+.mc3 { width: 14px; height: 14px; background: #aaa; }
+.mc4 { width: 10px; height: 10px; background: #ddd; }
+.mono-bars { display: flex; align-items: flex-end; gap: 3px; height: 40px; }
+.mb { border-radius: 2px 2px 0 0; width: 10px; }
+
+/* 19. Blueprint / Technical */
+.p-blueprint { background: #1a3a6e; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; width: 100%; height: 100%; min-height: 200px; }
+.blueprint-grid-bg { position: absolute; inset: 0; background-image: linear-gradient(rgba(100,160,255,.15) 1px, transparent 1px), linear-gradient(90deg, rgba(100,160,255,.15) 1px, transparent 1px); background-size: 16px 16px; }
+.blueprint-content { position: relative; width: 160px; }
+.bp-rect { border: 1px solid rgba(150,200,255,.7); border-radius: 2px; padding: 10px 12px; margin-bottom: 8px; }
+.bp-title { font-size: 10px; color: rgba(150,200,255,.9); letter-spacing: 1.5px; text-transform: uppercase; font-family: 'DM Mono', monospace; margin-bottom: 4px; }
+.bp-dim { font-size: 9px; color: rgba(150,200,255,.5); font-family: 'DM Mono', monospace; }
+.bp-line { width: 100%; height: 1px; background: rgba(150,200,255,.3); margin: 4px 0; }
+.bp-circle { width: 40px; height: 40px; border: 1px solid rgba(150,200,255,.6); border-radius: 50%; position: absolute; right: -10px; top: 10px; display: flex; align-items: center; justify-content: center; }
+.bp-inner { width: 20px; height: 20px; border: 1px solid rgba(150,200,255,.4); border-radius: 50%; }
+
+/* 20. Bauhaus */
+.p-bauhaus { background: #fff; display: flex; align-items: center; justify-content: center; padding: 16px; width: 100%; height: 100%; min-height: 200px; }
+.bauhaus-comp { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 8px; width: 160px; height: 120px; }
+.bh { border-radius: 2px; }
+.bh1 { background: #e63329; }
+.bh2 { background: #1a1a1a; border-radius: 50%; }
+.bh3 { background: #f5c800; position: relative; overflow: hidden; }
+.bh3::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 50%; background: #fff; }
+.bh4 { background: #1a5eb8; }
+
+/* We'll just define these generic layouts for 1-20 to keep it manageable */
+
+/* Remaining 26 Styles */
+
+/* 16. Cyberpunk Glitch */
+.p-cyberpunk-glitch { background: #000; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.card-cyberpunk-glitch { background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 1rem; color: #0ff; box-shadow: 0 10px 30px rgba(0,0,0,0.5); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); }
+.card-cyberpunk-glitch h3 { margin-bottom: 1rem; font-weight: 700; }
+.card-cyberpunk-glitch button { background: #0ff; color: #000; padding: 0.5rem 1.5rem; border: none; border-radius: 2rem; font-weight: bold; cursor: pointer; }
+
+/* 17. Retro Synthwave */
+.p-retro-synthwave { background: #2b00ff; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.btn-retro-synthwave { background: transparent; color: #ff007f; border: 2px solid #ff007f; padding: 1rem 2rem; border-radius: 0.5rem; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 2px; box-shadow: 4px 4px 0px #ff007f; }
+.btn-retro-synthwave:hover { transform: translate(4px, 4px); box-shadow: 0px 0px 0px #ff007f; }
+
+/* 18. Cosmic UI */
+.p-cosmic-ui { background: #0b0c10; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.box-cosmic-ui { width: 120px; height: 120px; background: #c5c6c7; border-radius: 50%; opacity: 0.8; animation: pulse-cosmic-ui 2s infinite alternate; }
+@keyframes pulse-cosmic-ui { from { transform: scale(1); box-shadow: 0 0 20px #c5c6c7; } to { transform: scale(1.1); box-shadow: 0 0 40px #c5c6c7, 0 0 60px #c5c6c7; } }
+
+/* 19. Holographic Card */
+.p-holographic-card { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.card-holographic-card { background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 1rem; color: #333; box-shadow: 0 10px 30px rgba(0,0,0,0.5); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); }
+.card-holographic-card h3 { margin-bottom: 1rem; font-weight: 700; }
+.card-holographic-card button { background: #333; color: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); padding: 0.5rem 1.5rem; border: none; border-radius: 2rem; font-weight: bold; cursor: pointer; }
+
+/* 20. Blob Morphing */
+.p-blob-morphing { background: #fdfbfb; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.btn-blob-morphing { background: transparent; color: #ebedee; border: 2px solid #ebedee; padding: 1rem 2rem; border-radius: 0.5rem; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 2px; box-shadow: 4px 4px 0px #ebedee; }
+.btn-blob-morphing:hover { transform: translate(4px, 4px); box-shadow: 0px 0px 0px #ebedee; }
+
+/* 21. Geometric Abstract */
+.p-geometric-abstract { background: #fff; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.box-geometric-abstract { width: 120px; height: 120px; background: #000; border-radius: 50%; opacity: 0.8; animation: pulse-geometric-abstract 2s infinite alternate; }
+@keyframes pulse-geometric-abstract { from { transform: scale(1); box-shadow: 0 0 20px #000; } to { transform: scale(1.1); box-shadow: 0 0 40px #000, 0 0 60px #000; } }
+
+/* 22. Frosted Matte */
+.p-frosted-matte { background: #e0e5ec; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.card-frosted-matte { background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 1rem; color: #333; box-shadow: 0 10px 30px rgba(0,0,0,0.5); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); }
+.card-frosted-matte h3 { margin-bottom: 1rem; font-weight: 700; }
+.card-frosted-matte button { background: #333; color: #e0e5ec; padding: 0.5rem 1.5rem; border: none; border-radius: 2rem; font-weight: bold; cursor: pointer; }
+
+/* 23. Aurora Gradient */
+.p-aurora-gradient { background: #ff9a9e; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.btn-aurora-gradient { background: transparent; color: #fecfef; border: 2px solid #fecfef; padding: 1rem 2rem; border-radius: 0.5rem; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 2px; box-shadow: 4px 4px 0px #fecfef; }
+.btn-aurora-gradient:hover { transform: translate(4px, 4px); box-shadow: 0px 0px 0px #fecfef; }
+
+/* 24. Minimal Wireframe */
+.p-minimalist-wire { background: #fff; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.box-minimalist-wire { width: 120px; height: 120px; background: #111; border-radius: 50%; opacity: 0.8; animation: pulse-minimalist-wire 2s infinite alternate; }
+@keyframes pulse-minimalist-wire { from { transform: scale(1); box-shadow: 0 0 20px #111; } to { transform: scale(1.1); box-shadow: 0 0 40px #111, 0 0 60px #111; } }
+
+/* 25. Pastel Pop */
+.p-pastel-pop { background: #ffecd2; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.card-pastel-pop { background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 1rem; color: #fcb69f; box-shadow: 0 10px 30px rgba(0,0,0,0.5); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); }
+.card-pastel-pop h3 { margin-bottom: 1rem; font-weight: 700; }
+.card-pastel-pop button { background: #fcb69f; color: #ffecd2; padding: 0.5rem 1.5rem; border: none; border-radius: 2rem; font-weight: bold; cursor: pointer; }
+
+/* 26. Brutalist Shadow */
+.p-brutalist-shadow { background: #ffeb3b; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.btn-brutalist-shadow { background: transparent; color: #000; border: 2px solid #000; padding: 1rem 2rem; border-radius: 0.5rem; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 2px; box-shadow: 4px 4px 0px #000; }
+.btn-brutalist-shadow:hover { transform: translate(4px, 4px); box-shadow: 0px 0px 0px #000; }
+
+/* 27. Clean Scandinavian */
+.p-clean-scandi { background: #fafafa; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.box-clean-scandi { width: 120px; height: 120px; background: #222; border-radius: 50%; opacity: 0.8; animation: pulse-clean-scandi 2s infinite alternate; }
+@keyframes pulse-clean-scandi { from { transform: scale(1); box-shadow: 0 0 20px #222; } to { transform: scale(1.1); box-shadow: 0 0 40px #222, 0 0 60px #222; } }
+
+/* 28. Liquid Morph */
+.p-liquid-morph { background: #4facfe; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.card-liquid-morph { background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 1rem; color: #00f2fe; box-shadow: 0 10px 30px rgba(0,0,0,0.5); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); }
+.card-liquid-morph h3 { margin-bottom: 1rem; font-weight: 700; }
+.card-liquid-morph button { background: #00f2fe; color: #4facfe; padding: 0.5rem 1.5rem; border: none; border-radius: 2rem; font-weight: bold; cursor: pointer; }
+
+/* 29. Neon Outlines */
+.p-neon-outlines { background: #000; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.btn-neon-outlines { background: transparent; color: #39ff14; border: 2px solid #39ff14; padding: 1rem 2rem; border-radius: 0.5rem; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 2px; box-shadow: 4px 4px 0px #39ff14; }
+.btn-neon-outlines:hover { transform: translate(4px, 4px); box-shadow: 0px 0px 0px #39ff14; }
+
+/* 30. Elegant Monospace */
+.p-elegant-mono { background: #111; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.box-elegant-mono { width: 120px; height: 120px; background: #eee; border-radius: 50%; opacity: 0.8; animation: pulse-elegant-mono 2s infinite alternate; }
+@keyframes pulse-elegant-mono { from { transform: scale(1); box-shadow: 0 0 20px #eee; } to { transform: scale(1.1); box-shadow: 0 0 40px #eee, 0 0 60px #eee; } }
+
+/* 31. Dark Elegant */
+.p-dark-elegant { background: #000; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.card-dark-elegant { background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 1rem; color: #d4af37; box-shadow: 0 10px 30px rgba(0,0,0,0.5); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); }
+.card-dark-elegant h3 { margin-bottom: 1rem; font-weight: 700; }
+.card-dark-elegant button { background: #d4af37; color: #000; padding: 0.5rem 1.5rem; border: none; border-radius: 2rem; font-weight: bold; cursor: pointer; }
+
+/* 32. Pixel Art 8-bit */
+.p-pixel-8bit { background: #8b9bb4; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.btn-pixel-8bit { background: transparent; color: #fff; border: 2px solid #fff; padding: 1rem 2rem; border-radius: 0.5rem; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 2px; box-shadow: 4px 4px 0px #fff; }
+.btn-pixel-8bit:hover { transform: translate(4px, 4px); box-shadow: 0px 0px 0px #fff; }
+
+/* 33. Industrial Metal */
+.p-industrial-metal { background: #434343; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.box-industrial-metal { width: 120px; height: 120px; background: #000000; border-radius: 50%; opacity: 0.8; animation: pulse-industrial-metal 2s infinite alternate; }
+@keyframes pulse-industrial-metal { from { transform: scale(1); box-shadow: 0 0 20px #000000; } to { transform: scale(1.1); box-shadow: 0 0 40px #000000, 0 0 60px #000000; } }
+
+/* 34. Velvet Texture */
+.p-velvet-texture { background: #800020; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.card-velvet-texture { background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 1rem; color: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.5); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); }
+.card-velvet-texture h3 { margin-bottom: 1rem; font-weight: 700; }
+.card-velvet-texture button { background: #fff; color: #800020; padding: 0.5rem 1.5rem; border: none; border-radius: 2rem; font-weight: bold; cursor: pointer; }
+
+/* 35. Floating Soft UI */
+.p-floating-soft { background: #f0f2f5; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.btn-floating-soft { background: transparent; color: #333; border: 2px solid #333; padding: 1rem 2rem; border-radius: 0.5rem; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 2px; box-shadow: 4px 4px 0px #333; }
+.btn-floating-soft:hover { transform: translate(4px, 4px); box-shadow: 0px 0px 0px #333; }
+
+/* 36. Futuristic Dash */
+.p-futuristic-dash { background: #001a33; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.box-futuristic-dash { width: 120px; height: 120px; background: #00cccc; border-radius: 50%; opacity: 0.8; animation: pulse-futuristic-dash 2s infinite alternate; }
+@keyframes pulse-futuristic-dash { from { transform: scale(1); box-shadow: 0 0 20px #00cccc; } to { transform: scale(1.1); box-shadow: 0 0 40px #00cccc, 0 0 60px #00cccc; } }
+
+/* 37. Typographic Hero */
+.p-typo-hero { background: #fff; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.card-typo-hero { background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 1rem; color: #000; box-shadow: 0 10px 30px rgba(0,0,0,0.5); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); }
+.card-typo-hero h3 { margin-bottom: 1rem; font-weight: 700; }
+.card-typo-hero button { background: #000; color: #fff; padding: 0.5rem 1.5rem; border: none; border-radius: 2rem; font-weight: bold; cursor: pointer; }
+
+/* 38. Grid Construct */
+.p-grid-construct { background: #0055ff; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.btn-grid-construct { background: transparent; color: #fff; border: 2px solid #fff; padding: 1rem 2rem; border-radius: 0.5rem; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 2px; box-shadow: 4px 4px 0px #fff; }
+.btn-grid-construct:hover { transform: translate(4px, 4px); box-shadow: 0px 0px 0px #fff; }
+
+/* 39. 3D Bevel */
+.p-3d-bevel { background: #dcdcdc; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.box-3d-bevel { width: 120px; height: 120px; background: #333; border-radius: 50%; opacity: 0.8; animation: pulse-3d-bevel 2s infinite alternate; }
+@keyframes pulse-3d-bevel { from { transform: scale(1); box-shadow: 0 0 20px #333; } to { transform: scale(1.1); box-shadow: 0 0 40px #333, 0 0 60px #333; } }
+
+/* 40. Transparent Hologram */
+.p-trans-hologram { background: #1a1a2e; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.card-trans-hologram { background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 1rem; color: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.5); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); }
+.card-trans-hologram h3 { margin-bottom: 1rem; font-weight: 700; }
+.card-trans-hologram button { background: #fff; color: #1a1a2e; padding: 0.5rem 1.5rem; border: none; border-radius: 2rem; font-weight: bold; cursor: pointer; }
+
+/* 41. Midnight Gloss */
+.p-midnight-gloss { background: #121212; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-family: 'Inter', sans-serif; }
+.btn-midnight-gloss { background: transparent; color: #fff; border: 2px solid #fff; padding: 1rem 2rem; border-radius: 0.5rem; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 2px; box-shadow: 4px 4px 0px #fff; }
+.btn-midnight-gloss:hover { transform: translate(4px, 4px); box-shadow: 0px 0px 0px #fff; }
