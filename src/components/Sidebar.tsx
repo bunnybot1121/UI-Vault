@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { LayoutDashboard, Layers, MonitorPlay, Zap, Bookmark, FolderHeart, Settings, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useStore } from '../store/useStore';
@@ -30,9 +29,9 @@ export function Sidebar() {
         <AnimatePresence>
           {isSidebarOpen && (
             <motion.span 
-              initial={{ opacity: 0, w: 0 }}
-              animate={{ opacity: 1, w: "auto" }}
-              exit={{ opacity: 0, w: 0 }}
+              initial={{ opacity: 0, width: 0 }}
+              animate={{ opacity: 1, width: "auto" }}
+              exit={{ opacity: 0, width: 0 }}
               className="font-unbounded font-bold text-lg ml-3 text-foreground tracking-tight overflow-hidden whitespace-nowrap"
             >
               UI Vault
@@ -56,9 +55,9 @@ export function Sidebar() {
             <AnimatePresence>
               {isSidebarOpen && (
                 <motion.span 
-                  initial={{ opacity: 0, w: 0 }}
-                  animate={{ opacity: 1, w: "auto" }}
-                  exit={{ opacity: 0, w: 0 }}
+                  initial={{ opacity: 0, width: 0 }}
+                  animate={{ opacity: 1, width: "auto" }}
+                  exit={{ opacity: 0, width: 0 }}
                   className="ml-3 overflow-hidden whitespace-nowrap"
                 >
                   {item.label}
@@ -78,9 +77,9 @@ export function Sidebar() {
            <AnimatePresence>
              {isSidebarOpen && (
                <motion.span
-                 initial={{ opacity: 0, w: 0 }}
-                 animate={{ opacity: 1, w: "auto" }}
-                 exit={{ opacity: 0, w: 0 }}
+                 initial={{ opacity: 0, width: 0 }}
+                 animate={{ opacity: 1, width: "auto" }}
+                 exit={{ opacity: 0, width: 0 }}
                  className="ml-3 overflow-hidden whitespace-nowrap"
                >
                  Settings

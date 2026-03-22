@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { useState } from 'react';
 import { Plus, CodeSquare, Palette } from 'lucide-react';
-import { useStore } from '../store/useStore';
 import { useNavigate } from 'react-router-dom';
 
 export function AddUI() {

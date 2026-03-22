@@ -1,73 +1,42 @@
-# React + TypeScript + Vite
+# UI Vault
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**UI Vault** is a high-contrast, Neo-Brutalist (Comic-Style) component gallery and UI inspiration board. It provides a unique space to Collect, Remix, and Reuse UI components within a profoundly stylized, interactive environment.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- **Authentic Comic-Style Theme:** Heavy inking borders (3px), deep drop shadows (6px+), classic halftone dot backgrounds, and ultra-vibrant interactive states.
+- **Dynamic Component Library:** Filter through dozens of UI categories (Glass, Minimal, Neon, Cards, Retro, etc.) with a clean, horizontally scrollable tag interface.
+- **Infinite Scrolling Background:** A massive, smooth-scrolling ambient background gallery displaying raw UI inspiration boards with high-contrast cinematic overlay.
+- **Magnetic Interactions:** Silky smooth, physics-based magnetic hovering effects on key navigation and layout elements.
+- **Zustand State Management:** Lightweight, predictable global state handling for filters and Vault queries.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Built With
+- **React 18** + **TypeScript**
+- **Tailwind CSS** (Custom Neo-brutalist utilities configured in `tailwind.config.js` and `index.css`)
+- **Framer Motion** (Physics-based animations and layout transitions)
+- **Lenis** (Smooth scroll hijacking)
+- **Zustand** (Global state management)
+- **Vite** (Build tooling)
 
-## React Compiler
+## 📦 Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/bunnybot1121/UI-Vault.git
+   ```
+2. Navigate into the directory and install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the fast local development server:
+   ```bash
+   npm run dev
+   ```
+4. Open `http://localhost:5173` to view the Vault in your browser.
 
-## Expanding the ESLint configuration
+## 🎨 Styling Architecture
+If you want to add your own components, simply wrap them with the global Neo-Brutalist classes to match the environment:
+- `.neo-brutal` – A massive bordered container with a heavy bottom-right shadow.
+- `.neo-btn` – An interactive button base that translates on click, removing the shadow for a "pressed" effect.
+- `.neo-btn-dark` – The inverted, ultra-contrasting version of the standard button.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Happy building! ⚡

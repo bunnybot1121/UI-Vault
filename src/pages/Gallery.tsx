@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { useStore } from '../store/useStore';
 import { Link } from 'react-router-dom';
@@ -19,14 +19,7 @@ export function Gallery() {
     return matchesSearch && matchesFilter;
   });
 
-  const cardVariant = {
-    hidden: { opacity: 0, y: 40 },
-    show: (i: number) => ({
-      opacity: 1,
-      y: 0,
-      transition: { delay: (i % 8) * 0.05, duration: 0.45, ease: "easeOut" },
-    }),
-  };
+
 
   return (
     <div className="max-w-7xl mx-auto space-y-6 pb-24 relative z-10">
@@ -57,7 +50,7 @@ export function Gallery() {
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {filteredComponents.map((comp, i) => {
+          {filteredComponents.map((comp) => {
             return (
               <motion.div
                 layout

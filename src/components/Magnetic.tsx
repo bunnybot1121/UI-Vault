@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 
 export function Magnetic({ children, strength = 0.5 }: { children: React.ReactElement, strength?: number }) {

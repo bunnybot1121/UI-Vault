@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
 export function WordReveal({ text, className }: { text: string; className?: string }) {
@@ -21,7 +20,7 @@ export function WordReveal({ text, className }: { text: string; className?: stri
       y: 0,
       rotateX: 0,
       filter: 'blur(0px)',
-      transition: { type: 'spring', damping: 12, stiffness: 100 },
+      transition: { type: 'spring' as const, damping: 12, stiffness: 100 },
     },
   };
 
